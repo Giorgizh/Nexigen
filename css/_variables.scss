@@ -1,0 +1,56 @@
+$bg-main: #0b0d17;
+$bg-card: #151821;
+$bg-card-hover: #1b1f2b;
+
+$color-primary: #246fba;
+$color-secondary: #753a98;
+$color-purple: #6246a4;
+$color-cyan: #00d2ff;
+$color-accent-purple: #a855f7;
+
+$color-white: #ffffff;
+$color-black: #0d0f14;
+$color-dark-alt: #1a1a2e;
+$color-slate: #e2e8f0;
+$color-muted: #8e92a8;
+
+$color-border-light: rgba(255, 255, 255, 0.15);
+$color-border-cyan: rgba(0, 210, 255, 0.4);
+$color-border-dark: rgba(0, 0, 0, 0.08);
+$color-backdrop: rgba(0, 0, 0, 0.5);
+
+$gradient-neon: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
+$gradient-cyan-purple: linear-gradient(90deg, $color-cyan, $color-secondary);
+$gradient-hero-title: linear-gradient(135deg, $color-cyan 0%, $color-accent-purple 100%);
+$gradient-phone-btn: linear-gradient(135deg, rgba($color-primary, 0.4), rgba($color-secondary, 0.4));
+$gradient-phone-btn-hover: linear-gradient(135deg, rgba($color-cyan, 0.6), rgba($color-secondary, 0.6));
+$gradient-dropdown-hover: linear-gradient(90deg, rgba($color-cyan, 0.15), rgba($color-secondary, 0.15));
+
+$font-headings: "Kode Mono", monospace;
+$font-body: "Mohave", sans-serif;
+
+$container-width: 1240px;
+$side-panel-width: 380px;
+
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 22px;
+$border-radius-pill: 30px;
+
+$transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fast: all 0.25s ease;
+$transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+$transition-panel: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+
+$shadow-panel: 10px 0 40px rgba(0, 0, 0, 0.25);
+$shadow-dropdown: 0 15px 40px rgba(0, 0, 0, 0.2);
+$shadow-phone-btn: 0 4px 18px rgba(0, 210, 255, 0.2);
+$shadow-phone-btn-hover: 0 6px 25px rgba(0, 210, 255, 0.4);
+$shadow-card-hover: 0 18px 40px rgba(98, 70, 164, 0.4), 0 8px 20px rgba(36, 111, 186, 0.3);
+$shadow-glow-cyan: 0 0 15px rgba(0, 210, 255, 0.3);
+$shadow-text-hero: 0 4px 20px rgba(0, 0, 0, 0.7);
+
+$animation-float: float-slow 4s ease-in-out infinite;
+$animation-flow: gradientFlow 15s ease infinite;
+$animation-shake: shake 0.5s ease-in-out;
+

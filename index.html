@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Nexigen</title>
+  </head>
+
+  <body>
+    <input type="checkbox" id="side-panel-toggle" class="side-panel-toggle" />
+    <label for="side-panel-toggle" class="side-panel-backdrop"></label>
+
+    <div class="side-panel">
+      <div class="side-panel__logo">
+        <img src="./images/nexigen-logo-dark.png" alt="Nexigen" />
+      </div>
+      <nav class="side-panel__nav">
+        <ul class="side-panel__list">
+          <li><a href="#home" class="side-panel__nav-link">Home</a></li>
+          <li><a href="#about" class="side-panel__nav-link">About</a></li>
+          <li><a href="#services" class="side-panel__nav-link">Services</a></li>
+          <li><a href="#blog" class="side-panel__nav-link">Blog</a></li>
+          <li><a href="#contact" class="side-panel__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <h2 class="side-panel__title">Contact Information</h2>
+      <div class="side-panel__info">
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <a href="tel:+12345678910" class="side-panel__value"
+            >+1 (234) 567 89 10</a
+          >
+        </div>
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <a href="mailto:info@nexigen.com" class="side-panel__value"
+            >info@nexigen.com</a
+          >
+        </div>
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <span class="side-panel__value"
+            >123 Innovation Street, Tech City, USA</span
+          >
+        </div>
+      </div>
+      <div class="side-panel__socials">
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+      <div class="side-panel__copyright">
+        © 2026 Nexigen. All rights reserved.
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img
+              src="./images/nexigen-logo.png"
+              alt="Nexigen"
+              class="header__logo-img"
+            />
+          </a>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#home" class="header__link header__link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="header__item dropdown">
+                <a
+                  href="#about"
+                  class="header__link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About <i class="fa-solid fa-chevron-down caret-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#about">About Company</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#team">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#careers">Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__item dropdown">
+                <a
+                  href="#services"
+                  class="header__link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services <i class="fa-solid fa-chevron-down caret-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#web-dev">Web Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#app-dev">App Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#marketing"
+                      >Digital Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#design">UI/UX Design</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a href="#blog" class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#contact" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <label
+              for="side-panel-toggle"
+              class="header__toggle"
+              id="menuToggle"
+            >
+              <i class="fa-solid fa-bars hamburger-icon"></i>
+              <i class="fa-solid fa-xmark close-icon"></i>
+            </label>
+            <a href="tel:+12345678910" class="header__phone">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+123 456 789 10</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div
+        id="heroBgCarousel"
+        class="carousel slide carousel-fade hero__bg-carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <div
+              class="hero__bg-slide"
+              style="
+                background-image: url(&quot;./images/slider-nexigen-1.jpg&quot;);
+              "
+            ></div>
+          </div>
+          <div class="carousel-item h-100">
+            <div
+              class="hero__bg-slide"
+              style="
+                background-image: url(&quot;./images/slider-nexigen-2.jpg&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <div class="hero__top">
+              <span class="hero__badge">Next Gen Marketing & Code</span>
+              <h1 class="hero__title">
+                Future-Driven <br /><span class="text-gradient"
+                  >Digital Agency</span
+                >
+              </h1>
+              <p class="hero__text">
+                We combine cutting-edge technology, bold brand design, and
+                modern marketing solutions to propel your digital products into
+                the next generation.
+              </p>
+              <div class="hero__actions">
+                <a href="#contact" class="btn btn-primary"
+                  >Get Started <i class="fa-solid fa-arrow-right"></i
+                ></a>
+                <a href="#services" class="btn btn-secondary"
+                  >Explore Services</a
+                >
+              </div>
+            </div>
+
+            <div class="hero__bottom">
+              <div class="hero__cards">
+                <div class="hero-card">
+                  <div class="hero-card__icon">
+                    <i class="fa-solid fa-microchip"></i>
+                  </div>
+                  <h3 class="hero-card__title">Web Design</h3>
+                  <p class="hero-card__text">Modern, responsive & fast sites</p>
+                </div>
+
+                <div class="hero-card">
+                  <div class="hero-card__icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                  <h3 class="hero-card__title">SEO Strategy</h3>
+                  <p class="hero-card__text">Rank higher, grow organically</p>
+                </div>
+
+                <div class="hero-card">
+                  <div class="hero-card__icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                  </div>
+                  <h3 class="hero-card__title">UI/UX Design</h3>
+                  <p class="hero-card__text">Intuitive interfaces users love</p>
+                </div>
+
+                <div class="hero-card">
+                  <div class="hero-card__icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <h3 class="hero-card__title">Brand Identity</h3>
+                  <p class="hero-card__text">Logos, colors & visual systems</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" id="about">
+      <div class="container">
+        <div class="results-wrapper">
+          <div class="results-image">
+            <img
+              src="./images/nexigen-about-1.jpg"
+              alt="Digital Experiences Nexigen"
+              class="results-image__img"
+            />
+          </div>
+
+          <div class="results-info">
+            <h2 class="results-title">
+              We Build Digital Experiences That Drive Real Results
+            </h2>
+            <p class="results-description">
+              At Nexigen, we combine creativity and technology to craft digital
+              solutions that elevate brands and accelerate growth. Our team of
+              designers, developers, and strategists work together to deliver
+              measurable impact for every client we partner with.
+            </p>
+
+            <div class="results-cards">
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="results-card__title">Digital Marketing</h3>
+                <p class="results-card__text">Reach, convert at scale</p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="results-card__title">E-Commerce</h3>
+                <p class="results-card__text">
+                  Stores built to sell &amp; perform
+                </p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="results-card__title">Social Media</h3>
+                <p class="results-card__text">Grow your audience organically</p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3 class="results-card__title">Content Strategy</h3>
+                <p class="results-card__text">Words that engage and persuade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-stats">
+          <div class="stat-card">
+            <h4 class="stat-card__title">Happy Clients</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="stat-card__number">150 +</div>
+            <p class="stat-card__text">Brands we proudly served</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Projects Delivered</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="stat-card__number">320 +</div>
+            <p class="stat-card__text">End-to-end digital projects</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Years of Experience</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="stat-card__number">8 +</div>
+            <p class="stat-card__text">In design, dev &amp; strategy</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Client Satisfaction</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="stat-card__number">98 %</div>
+            <p class="stat-card__text">Average project success rate</p>
+          </div>
+        </div>
+
+        <div class="results-banner">
+          <div class="results-banner__content">
+            <h3 class="results-banner__title">
+              Digital Services Tailored to Your Growth
+            </h3>
+            <p class="results-banner__text">
+              From strategy to execution, we deliver end-to-end digital
+              solutions that help brands stand out, scale fast, and stay ahead
+              of the curve.
+            </p>
+          </div>
+          <div class="results-banner__action">
+            <a href="#services" class="btn-all-services"> All Services </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-cards-section" id="services">
+      <div class="container">
+        <div class="owl-carousel owl-theme service-cards-carousel">
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-1.jpg"
+                alt="Digital Marketing"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#287bb8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"/>
+                  <path d="m19 9-5 5-4-4-3 3"/>
+                  <circle cx="19" cy="9" r="1.5" fill="#287bb8"/>
+                  <circle cx="14" cy="14" r="1.5" fill="#287bb8"/>
+                  <circle cx="10" cy="10" r="1.5" fill="#287bb8"/>
+                  <circle cx="7" cy="13" r="1.5" fill="#287bb8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">Digital Marketing</h3>
+                <p class="service-card__text">
+                  Data-driven campaigns that grow your reach and revenue
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="Digital Marketing">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-2.jpg"
+                alt="Social Media Management"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#287bb8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  <path d="M8 9h.01"/>
+                  <path d="M12 9h.01"/>
+                  <path d="M16 9h.01"/>
+                  <path d="M7 13h10"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">Social Media Management</h3>
+                <p class="service-card__text">
+                  Strategic content that builds community and drives engagement
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="Social Media Management">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-3.jpg"
+                alt="Brand Identity"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#287bb8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"/>
+                  <path d="M9 12H4.5"/>
+                  <path d="M15 9V4.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">Brand Identity</h3>
+                <p class="service-card__text">
+                  Memorable logos, colors and visual systems for your brand
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="Brand Identity">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-4.jpg"
+                alt="Web Development"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">Web Development</h3>
+                <p class="service-card__text">
+                  Custom high-performance websites built with clean scalable code
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="Web Development">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-5.jpg"
+                alt="UI/UX Design"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">UI/UX Design</h3>
+                <p class="service-card__text">
+                  Intuitive user experiences and beautiful digital interface designs
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="UI/UX Design">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__image-box">
+              <img
+                src="./images/services-small-nexigen-6.jpg"
+                alt="SEO & Analytics"
+                class="service-card__img"
+              />
+              <div class="service-card__badge-icon">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__info">
+                <h3 class="service-card__title">SEO & Analytics</h3>
+                <p class="service-card__text">
+                  Boost search visibility and convert traffic with data insights
+                </p>
+              </div>
+              <a href="#services" class="service-card__arrow-btn" aria-label="SEO & Analytics">
+                <i class="fa-solid fa-arrow-right service-card__arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Brands Choose Nexigen Section -->
+    <section class="why-choose-section" id="why-choose">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Why Brands Choose Nexigen</h2>
+          <p class="section-subtitle">
+            We combine creativity, strategy and technology to deliver results that matter.
+          </p>
+        </div>
+
+        <div class="why-choose-grid">
+          <div class="why-choose-card">
+            <div class="why-choose-card__icon">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="15" x2="23" y2="15"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="15" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-card__title">Proven Expertise</h3>
+            <p class="why-choose-card__text">
+              Years of experience across design, dev and digital strategy
+            </p>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-card__icon">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"/>
+                <path d="M9 12H4.5"/>
+                <path d="M15 9V4.5"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-card__title">Growth Focused</h3>
+            <p class="why-choose-card__text">
+              Every solution we build is tied to measurable business outcomes
+            </p>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-card__icon">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="13" height="11" rx="2"/>
+                <rect x="9" y="10" width="13" height="11" rx="2"/>
+                <circle cx="15.5" cy="15.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-card__title">Agile Process</h3>
+            <p class="why-choose-card__text">
+              Fast, flexible workflows that adapt to your evolving project needs
+            </p>
+          </div>
+
+          <div class="why-choose-card">
+            <div class="why-choose-card__icon">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5L6.5 10.5 10 10z"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-card__title">Trusted Quality</h3>
+            <p class="why-choose-card__text">
+              Consistent, high-standard delivery on every project we take
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted by Leading Brands Section -->
+    <section class="brands-section" id="brands">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Trusted by Leading Brands</h2>
+          <p class="section-subtitle">
+            We partner with forward-thinking companies to build digital products that make a difference.
+          </p>
+          <div class="brands-header-line"></div>
+        </div>
+
+        <div class="brands-grid">
+          <div class="brand-item">
+            <img src="./images/cli-1.jpg" alt="Spark" class="brand-logo" />
+          </div>
+          <div class="brand-item">
+            <img src="./images/cli-2.jpg" alt="Data Point" class="brand-logo" />
+          </div>
+          <div class="brand-item">
+            <img src="./images/cli-3.jpg" alt="Lorem Ipsum" class="brand-logo" />
+          </div>
+          <div class="brand-item">
+            <img src="./images/cli-4.jpg" alt="Codetech" class="brand-logo" />
+          </div>
+          <div class="brand-item">
+            <img src="./images/cli-5.jpg" alt="Garage" class="brand-logo" />
+          </div>
+          <div class="brand-item">
+            <img src="./images/cli-6.jpg" alt="TechPoint" class="brand-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Our Clients Say (Testimonials Section) -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Brands that trusted Nexigen and transformed their digital presence.
+          </p>
+        </div>
+
+        <div class="owl-carousel owl-theme testimonials-carousel">
+          <!-- Card 1 (Spark) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-1.jpg" alt="Spark" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">James Carter, CEO</h4>
+            <p class="testimonial-card__quote">
+              Nexigen transformed our brand completely. Delivered on time, on budget and beyond expectations.
+            </p>
+          </div>
+
+          <!-- Card 2 (Data Point) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-2.jpg" alt="Data Point" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Lisa Park, Director</h4>
+            <p class="testimonial-card__quote">
+              Seamless process from day one. Creative, strategic and always one step ahead of the brief.
+            </p>
+          </div>
+
+          <!-- Card 3 (Lorem Ipsum) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-3.jpg" alt="Lorem Ipsum" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Sarah Jenkins, VP Marketing</h4>
+            <p class="testimonial-card__quote">
+              Incredible design quality and seamless collaboration. Highly recommended for modern brands.
+            </p>
+          </div>
+
+          <!-- Card 4 (Codetech) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-4.jpg" alt="Codetech" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Daniel Moore, Founder</h4>
+            <p class="testimonial-card__quote">
+              Outstanding results. Our traffic doubled and our brand finally looks as strong as our product.
+            </p>
+          </div>
+
+          <!-- Card 5 (Garage) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-5.jpg" alt="Garage" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Alex Rivera, Head of Product</h4>
+            <p class="testimonial-card__quote">
+              The team's speed and execution exceeded our highest expectations. Truly next generation.
+            </p>
+          </div>
+
+          <!-- Card 6 (TechPoint) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="./images/cli-6.jpg" alt="TechPoint" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Michael Chen, CTO</h4>
+            <p class="testimonial-card__quote">
+              Top-tier engineering and visual design. Nexigen is our go-to partner for scalable web products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <!-- Footer Main Grid -->
+        <div class="footer__main">
+          <!-- Col 1: Brand & Socials -->
+          <div class="footer__brand">
+            <a href="#" class="footer__logo-link">
+              <img src="./images/nexigen-logo.png" alt="Nexigen" class="footer__logo" />
+            </a>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links Box -->
+          <div class="footer__box">
+            <h4 class="footer__box-title">QUICK LINKS</h4>
+            <ul class="footer__menu">
+              <li><a href="#hero"><span class="bullet">■</span> Home</a></li>
+              <li><a href="#about"><span class="bullet">■</span> About Us</a></li>
+              <li><a href="#why-choose"><span class="bullet">■</span> Advantages</a></li>
+              <li><a href="#appointment"><span class="bullet">■</span> Book Appointment</a></li>
+              <li><a href="#services"><span class="bullet">■</span> Services</a></li>
+              <li><a href="#contact"><span class="bullet">■</span> Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Services Box -->
+          <div class="footer__box">
+            <h4 class="footer__box-title">SERVICES</h4>
+            <ul class="footer__menu">
+              <li><a href="#services"><span class="bullet">■</span> Web Development</a></li>
+              <li><a href="#services"><span class="bullet">■</span> UI/UX Design</a></li>
+              <li><a href="#services"><span class="bullet">■</span> Digital Marketing</a></li>
+              <li><a href="#services"><span class="bullet">■</span> Brand Identity</a></li>
+              <li><a href="#services"><span class="bullet">■</span> Tech Consulting</a></li>
+              <li><a href="#services"><span class="bullet">■</span> Social Media Management</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Contact Info Cards Row -->
+        <div class="footer__cards-row">
+          <!-- Card 1: Support -->
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Reach out for expert support and assistance anytime.
+            </p>
+            <a href="tel:+123456789001" class="footer-card__value">+123 456 78 90 01</a>
+          </div>
+
+          <!-- Card 2: Email Prompt -->
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Have questions? Email us for prompt responses.
+            </p>
+            <a href="mailto:example@example.com" class="footer-card__value">example@example.com</a>
+          </div>
+
+          <!-- Card 3: Support Email -->
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.2 15c.7-1.2 1-2.5.7-3.9-.6-2-2.4-3.5-4.4-3.5h-1.2C15.8 5 13.7 3 11 3 8.1 3 5.7 5.2 5.5 8.1 3.5 8.6 2 10.4 2 12.5c0 2.2 1.6 4.1 3.8 4.5"/>
+                <path d="M12 12v9"/>
+                <path d="m15 18-3 3-3-3"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Get professional help for troubleshooting and maintenance.
+            </p>
+            <a href="mailto:example2@example.com" class="footer-card__value">example2@example.com</a>
+          </div>
+
+          <!-- Card 4: Location -->
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Stop by for in-person consultations and expert.
+            </p>
+            <span class="footer-card__value">New Jersey, USA</span>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer__bottom">
+          <div class="footer__divider"></div>
+          <p class="footer__copyright">
+            © 2026 Nexigen - All Rights Reserved.
+          </p>
+          <div class="footer__divider"></div>
+        </div>
+      </div>
+
+      <!-- Floating Chat Button -->
+      <a href="#" class="floating-chat-btn" aria-label="Live Chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          <circle cx="9" cy="10" r="1" fill="#ffffff"/>
+          <circle cx="12" cy="10" r="1" fill="#ffffff"/>
+          <circle cx="15" cy="10" r="1" fill="#ffffff"/>
+        </svg>
+      </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header");
+        const logoImg = document.querySelector(".header__logo-img");
+
+        function checkScroll() {
+          if (window.scrollY > 40) {
+            header.classList.add("header--sticky");
+            if (logoImg) logoImg.src = "./images/nexigen-logo-dark.png";
+          } else {
+            header.classList.remove("header--sticky");
+            if (logoImg) logoImg.src = "./images/nexigen-logo.png";
+          }
+        }
+
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
+
+      $(document).ready(function () {
+        $(".service-cards-carousel").owlCarousel({
+          loop: true,
+          margin: 28,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3500,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+              margin: 16
+            },
+            768: {
+              items: 2,
+              margin: 20
+            },
+            1024: {
+              items: 3,
+              margin: 28
+            }
+          }
+        });
+
+        $(".testimonials-carousel").owlCarousel({
+          loop: true,
+          margin: 28,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+              margin: 16
+            },
+            768: {
+              items: 2,
+              margin: 20
+            },
+            1024: {
+              items: 3,
+              margin: 28
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
+
+

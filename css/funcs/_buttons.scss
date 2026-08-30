@@ -1,0 +1,79 @@
+@import "../variables";
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-family: $font-headings;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: $border-radius-pill;
+  text-decoration: none;
+  transition: $transition-smooth;
+  cursor: pointer;
+  border: none;
+}
+
+@mixin button-primary {
+  @include card-shine-effect;
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #376fc9 0%, #6838a3 100%);
+  color: $color-white;
+  font-family: $font-headings;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(55, 111, 201, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
+  &:hover {
+    color: $color-white;
+    @include card-hover-3d(
+      rgba(0, 210, 255, 0.8),
+      (
+        0 20px 45px rgba(87, 51, 151, 0.5),
+        0 0 30px rgba(0, 210, 255, 0.4),
+        inset 0 0 15px rgba(0, 210, 255, 0.2)
+      )
+    );
+  }
+}
+
+@mixin button-secondary {
+  background: rgba($color-white, 0.1);
+  color: $color-white;
+  border: 1px solid rgba($color-white, 0.2);
+
+  &:hover {
+    background: rgba($color-white, 0.25);
+    border-color: rgba($color-white, 0.4);
+    transform: translateY(-3px);
+    color: $color-white;
+  }
+}
+
+@mixin button-variant(
+  $bg,
+  $color,
+  $border-color: transparent,
+  $hover-bg: null
+) {
+  background: $bg;
+  color: $color;
+  border: 1px solid $border-color;
+
+  &:hover {
+    @if $hover-bg != null {
+      background: $hover-bg;
+    }
+    transform: translateY(-3px);
+  }
+}
