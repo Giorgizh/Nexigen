@@ -1,0 +1,59 @@
+@import "../variables";
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 60px 0 70px;
+  }
+
+  .contact-cards-grid {
+    gap: 16px;
+    margin-bottom: 35px;
+  }
+
+  .contact-info-card {
+    padding: 30px 18px;
+  }
+
+  .map-section iframe {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 45px 0 55px;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form__row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .btn-send-form {
+    width: 100%;
+  }
+
+  .map-section iframe {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 35px 0 45px;
+  }
+
+  .contact-info-card {
+    padding: 24px 16px;
+  }
+
+  .map-section iframe {
+    height: 280px;
+  }
+}
