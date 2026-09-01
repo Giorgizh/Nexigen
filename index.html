@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link rel="icon" href="./images/nexigen-icon.jpg" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Nexigen</title>
   </head>
@@ -91,7 +92,7 @@
         <div class="header__inner">
           <a href="#" class="header__logo">
             <img
-              src="./images/nexigen-logo.png"
+              src="./images/nexigen-logo-dark.png"
               alt="Nexigen"
               class="header__logo-img"
             />
@@ -100,7 +101,7 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#home" class="header__link header__link--active"
+                <a href="./index.html" class="header__link header__link--active"
                   >Home</a
                 >
               </li>
@@ -175,8 +176,12 @@
               class="header__toggle"
               id="menuToggle"
             >
-              <i class="fa-solid fa-bars hamburger-icon"></i>
-              <i class="fa-solid fa-xmark close-icon"></i>
+              <span class="header-toggle-icon hamburger-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="close-icon" aria-hidden="true">×</span>
             </label>
             <a href="tel:+12345678910" class="header__phone">
               <i class="fa-solid fa-phone-volume"></i>
@@ -194,22 +199,37 @@
         data-bs-ride="carousel"
         data-bs-interval="4000"
       >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroBgCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroBgCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
-            <div
-              class="hero__bg-slide"
-              style="
-                background-image: url(&quot;./images/slider-nexigen-1.jpg&quot;);
-              "
-            ></div>
+            <img
+              src="./images/slider-nexigen-1.jpg"
+              class="d-block w-100 h-100 hero__bg-slide"
+              alt="Nexigen digital agency showcase"
+            />
           </div>
           <div class="carousel-item h-100">
-            <div
-              class="hero__bg-slide"
-              style="
-                background-image: url(&quot;./images/slider-nexigen-2.jpg&quot;);
-              "
-            ></div>
+            <img
+              src="./images/slider-nexigen-2.jpg"
+              class="d-block w-100 h-100 hero__bg-slide"
+              alt="Nexigen growth marketing and technology services"
+            />
           </div>
         </div>
       </div>
@@ -917,34 +937,10 @@
       </a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const header = document.querySelector(".header");
-        const logoImg = document.querySelector(".header__logo-img");
-
-        function checkScroll() {
-          if (window.scrollY > 40) {
-            header.classList.add("header--sticky");
-            if (logoImg) logoImg.src = "./images/nexigen-logo-dark.png";
-          } else {
-            header.classList.remove("header--sticky");
-            if (logoImg) logoImg.src = "./images/nexigen-logo.png";
-          }
-        }
-
-        window.addEventListener("scroll", checkScroll);
-        checkScroll();
-
-        document.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
-          toggle.addEventListener("click", function (e) {
-            e.preventDefault();
-          });
-        });
-      });
-
       $(document).ready(function () {
         $(".service-cards-carousel").owlCarousel({
           loop: true,
