@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Nexigen - About Us</title>
+  </head>
+  <body>
+    <input type="checkbox" id="side-panel-toggle" class="side-panel-toggle" />
+    <label for="side-panel-toggle" class="side-panel-backdrop"></label>
+
+    <div class="side-panel">
+      <div class="side-panel__logo">
+        <img src="../images/nexigen-logo-dark.png" alt="Nexigen" />
+      </div>
+      <nav class="side-panel__nav">
+        <ul class="side-panel__list">
+          <li><a href="../index.html" class="side-panel__nav-link">Home</a></li>
+          <li><a href="./aboutus.html" class="side-panel__nav-link">About</a></li>
+          <li><a href="./services.html" class="side-panel__nav-link">Services</a></li>
+          <li><a href="./blog.html" class="side-panel__nav-link">Blog</a></li>
+          <li><a href="../index.html#contact" class="side-panel__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <h2 class="side-panel__title">Contact Information</h2>
+      <div class="side-panel__info">
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <a href="tel:+12345678910" class="side-panel__value"
+            >+1 (234) 567 89 10</a
+          >
+        </div>
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <a href="mailto:info@nexigen.com" class="side-panel__value"
+            >info@nexigen.com</a
+          >
+        </div>
+        <div class="side-panel__item">
+          <div class="side-panel__icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <span class="side-panel__value"
+            >123 Innovation Street, Tech City, USA</span
+          >
+        </div>
+      </div>
+      <div class="side-panel__socials">
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="side-panel__social-link"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+      <div class="side-panel__copyright">
+        © 2026 Nexigen. All rights reserved.
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__inner">
+          <a href="../index.html" class="header__logo">
+            <img
+              src="../images/nexigen-logo.png"
+              alt="Nexigen"
+              class="header__logo-img"
+            />
+          </a>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="../index.html" class="header__link">Home</a>
+              </li>
+              <li class="header__item dropdown">
+                <a
+                  href="javascript:void(0)"
+                  class="header__link dropdown-toggle header__link--active"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  About <i class="fa-solid fa-chevron-down caret-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./aboutus.html">About Company</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./aboutus.html">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./aboutus.html">Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__item dropdown">
+                <a
+                  href="javascript:void(0)"
+                  class="header__link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Services <i class="fa-solid fa-chevron-down caret-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./services.html">Web Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">UI/UX Design</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">Digital Marketing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">Social Media Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">Brand Identity</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">Tech Consulting</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./services.html">All Services</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a href="./blog.html" class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="../index.html#contact" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <label
+              for="side-panel-toggle"
+              class="header__toggle"
+              id="menuToggle"
+            >
+              <i class="fa-solid fa-bars hamburger-icon"></i>
+              <i class="fa-solid fa-xmark close-icon"></i>
+            </label>
+            <a href="tel:+12345678910" class="header__phone">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+123 456 789 10</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="page-banner__bg">
+        <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="blueWaveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563eb" stop-opacity="0.75" />
+              <stop offset="40%" stop-color="#4f46e5" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.05" />
+            </linearGradient>
+            <linearGradient id="pinkWaveGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#e11d48" stop-opacity="0.75" />
+              <stop offset="40%" stop-color="#db2777" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#9333ea" stop-opacity="0.05" />
+            </linearGradient>
+          </defs>
+
+          <g stroke="url(#blueWaveGrad)" stroke-width="1.3">
+            <path d="M-50,-40 C200,40 350,180 750,340" />
+            <path d="M-50,-20 C220,50 370,190 780,340" />
+            <path d="M-50,0 C240,60 390,200 810,340" />
+            <path d="M-50,20 C260,70 410,210 840,340" />
+            <path d="M-50,40 C280,80 430,220 870,340" />
+            <path d="M-50,60 C300,90 450,230 900,340" />
+            <path d="M-50,80 C320,100 470,240 930,340" />
+            <path d="M-50,100 C340,110 490,250 960,340" />
+            <path d="M-50,120 C360,120 510,260 990,340" />
+            <path d="M-50,140 C380,130 530,270 1020,340" />
+            <path d="M-50,160 C400,140 550,280 1050,340" />
+            <path d="M-50,180 C420,150 570,290 1080,340" />
+            <path d="M-50,200 C440,160 590,300 1110,340" />
+            <path d="M-50,220 C460,170 610,310 1140,340" />
+            <path d="M-50,-60 C180,30 330,170 720,340" />
+            <path d="M-50,-80 C160,20 310,160 690,340" />
+            <path d="M-50,-100 C140,10 290,150 660,340" />
+            <path d="M-50,-120 C120,0 270,140 630,340" />
+          </g>
+
+          <g stroke="url(#pinkWaveGrad)" stroke-width="1.3">
+            <path d="M1490,-40 C1240,40 1090,180 690,340" />
+            <path d="M1490,-20 C1220,50 1070,190 660,340" />
+            <path d="M1490,0 C1200,60 1050,200 630,340" />
+            <path d="M1490,20 C1180,70 1030,210 600,340" />
+            <path d="M1490,40 C1160,80 1010,220 570,340" />
+            <path d="M1490,60 C1140,90 990,230 540,340" />
+            <path d="M1490,80 C1120,100 970,240 510,340" />
+            <path d="M1490,100 C1100,110 950,250 480,340" />
+            <path d="M1490,120 C1080,120 930,260 450,340" />
+            <path d="M1490,140 C1060,130 910,270 420,340" />
+            <path d="M1490,160 C1040,140 890,280 390,340" />
+            <path d="M1490,180 C1020,150 870,290 360,340" />
+            <path d="M1490,200 C1000,160 850,300 330,340" />
+            <path d="M1490,220 C980,170 830,310 300,340" />
+            <path d="M1490,-60 C1260,30 1110,170 720,340" />
+            <path d="M1490,-80 C1280,20 1130,160 750,340" />
+            <path d="M1490,-100 C1300,10 1150,150 780,340" />
+            <path d="M1490,-120 C1320,0 1170,140 810,340" />
+          </g>
+        </svg>
+      </div>
+      <div class="container text-center">
+        <h1 class="page-banner__title">About Us</h1>
+        <div class="page-banner__breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="separator">&gt;</span>
+          <span class="current">About Us</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" id="about">
+      <div class="container">
+        <div class="results-wrapper">
+          <div class="results-image">
+            <img
+              src="../images/nexigen-about-1.jpg"
+              alt="Digital Experiences Nexigen"
+              class="results-image__img"
+            />
+          </div>
+
+          <div class="results-info">
+            <h2 class="results-title">
+              We Build Digital Experiences That Drive Real Results
+            </h2>
+            <p class="results-description">
+              At Nexigen, we combine creativity and technology to craft digital
+              solutions that elevate brands and accelerate growth. Our team of
+              designers, developers, and strategists work together to deliver
+              measurable impact for every client we partner with.
+            </p>
+
+            <div class="results-cards">
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="results-card__title">Digital Marketing</h3>
+                <p class="results-card__text">Reach, convert at scale</p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="results-card__title">E-Commerce</h3>
+                <p class="results-card__text">
+                  Stores built to sell &amp; perform
+                </p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="results-card__title">Social Media</h3>
+                <p class="results-card__text">Grow your audience organically</p>
+              </div>
+
+              <div class="results-card">
+                <div class="results-card__icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3 class="results-card__title">Content Strategy</h3>
+                <p class="results-card__text">Words that engage and persuade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-stats">
+          <div class="stat-card">
+            <h4 class="stat-card__title">Happy Clients</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="stat-card__number">150 +</div>
+            <p class="stat-card__text">Brands we proudly served</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Projects Delivered</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="stat-card__number">320 +</div>
+            <p class="stat-card__text">End-to-end digital projects</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Years of Experience</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="stat-card__number">8 +</div>
+            <p class="stat-card__text">In design, dev &amp; strategy</p>
+          </div>
+
+          <div class="stat-card">
+            <h4 class="stat-card__title">Client Satisfaction</h4>
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="stat-card__number">98 %</div>
+            <p class="stat-card__text">Average project success rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Brands that trusted Nexigen and transformed their digital presence.
+          </p>
+        </div>
+
+        <div class="owl-carousel owl-theme testimonials-carousel">
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-1.jpg" alt="Spark" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">James Carter, CEO</h4>
+            <p class="testimonial-card__quote">
+              Nexigen transformed our brand completely. Delivered on time, on budget and beyond expectations.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-2.jpg" alt="Data Point" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Lisa Park, Director</h4>
+            <p class="testimonial-card__quote">
+              Seamless process from day one. Creative, strategic and always one step ahead of the brief.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-3.jpg" alt="Lorem Ipsum" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Sarah Jenkins, VP Marketing</h4>
+            <p class="testimonial-card__quote">
+              Incredible design quality and seamless collaboration. Highly recommended for modern brands.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-4.jpg" alt="Codetech" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Daniel Moore, Founder</h4>
+            <p class="testimonial-card__quote">
+              Outstanding results. Our traffic doubled and our brand finally looks as strong as our product.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-5.jpg" alt="Garage" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Alex Rivera, Head of Product</h4>
+            <p class="testimonial-card__quote">
+              The team's speed and execution exceeded our highest expectations. Truly next generation.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__logo-box">
+              <img src="../images/cli-6.jpg" alt="TechPoint" class="testimonial-card__logo" />
+            </div>
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="testimonial-card__author">Michael Chen, CTO</h4>
+            <p class="testimonial-card__quote">
+              Top-tier engineering and visual design. Nexigen is our go-to partner for scalable web products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <a href="../index.html" class="footer__logo-link">
+              <img src="../images/nexigen-logo.png" alt="Nexigen" class="footer__logo" />
+            </a>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__box">
+            <h4 class="footer__box-title">QUICK LINKS</h4>
+            <ul class="footer__menu">
+              <li><a href="../index.html#home"><span class="bullet">■</span> Home</a></li>
+              <li><a href="./aboutus.html"><span class="bullet">■</span> About Us</a></li>
+              <li><a href="../index.html#why-choose"><span class="bullet">■</span> Advantages</a></li>
+              <li><a href="../index.html#appointment"><span class="bullet">■</span> Book Appointment</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> Services</a></li>
+              <li><a href="../index.html#contact"><span class="bullet">■</span> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__box">
+            <h4 class="footer__box-title">SERVICES</h4>
+            <ul class="footer__menu">
+              <li><a href="./services.html"><span class="bullet">■</span> Web Development</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> UI/UX Design</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> Digital Marketing</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> Brand Identity</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> Tech Consulting</a></li>
+              <li><a href="./services.html"><span class="bullet">■</span> Social Media Management</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__cards-row">
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Reach out for expert support and assistance anytime.
+            </p>
+            <a href="tel:+123456789001" class="footer-card__value">+123 456 78 90 01</a>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Have questions? Email us for prompt responses.
+            </p>
+            <a href="mailto:example@example.com" class="footer-card__value">example@example.com</a>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.2 15c.7-1.2 1-2.5.7-3.9-.6-2-2.4-3.5-4.4-3.5h-1.2C15.8 5 13.7 3 11 3 8.1 3 5.7 5.2 5.5 8.1 3.5 8.6 2 10.4 2 12.5c0 2.2 1.6 4.1 3.8 4.5"/>
+                <path d="M12 12v9"/>
+                <path d="m15 18-3 3-3-3"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Get professional help for troubleshooting and maintenance.
+            </p>
+            <a href="mailto:example2@example.com" class="footer-card__value">example2@example.com</a>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="footer-card__line"></div>
+            <p class="footer-card__text">
+              Stop by for in-person consultations and expert.
+            </p>
+            <span class="footer-card__value">New Jersey, USA</span>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__divider"></div>
+          <p class="footer__copyright">
+            © 2026 Nexigen - All Rights Reserved.
+          </p>
+          <div class="footer__divider"></div>
+        </div>
+      </div>
+
+      <a href="#" class="floating-chat-btn" aria-label="Live Chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          <circle cx="9" cy="10" r="1" fill="#ffffff"/>
+          <circle cx="12" cy="10" r="1" fill="#ffffff"/>
+          <circle cx="15" cy="10" r="1" fill="#ffffff"/>
+        </svg>
+      </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header");
+        const logoImg = document.querySelector(".header__logo-img");
+
+        function checkScroll() {
+          if (window.scrollY > 40) {
+            header.classList.add("header--sticky");
+            if (logoImg) logoImg.src = "../images/nexigen-logo-dark.png";
+          } else {
+            header.classList.remove("header--sticky");
+            if (logoImg) logoImg.src = "../images/nexigen-logo.png";
+          }
+        }
+
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+
+        document.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $(".testimonials-carousel").owlCarousel({
+          loop: true,
+          margin: 28,
+          nav: false,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+              margin: 16
+            },
+            768: {
+              items: 2,
+              margin: 20
+            },
+            1024: {
+              items: 3,
+              margin: 28
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

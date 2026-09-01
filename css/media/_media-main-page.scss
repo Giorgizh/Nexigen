@@ -175,9 +175,14 @@
     .results-stats {
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
-      margin-bottom: 50px;
+      margin-bottom: 0;
     }
+  }
 
+  .services-cta-section {
+    padding: 40px 0 15px;
+
+    .services-cta-banner,
     .results-banner {
       flex-direction: column;
       align-items: flex-start;
@@ -186,6 +191,12 @@
       &__title {
         font-size: 1.85rem;
       }
+    }
+
+    .btn-all-services {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
     }
   }
 
@@ -400,17 +411,38 @@
     .results-stats {
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
+  }
 
+  .services-cta-section {
+    padding: 30px 0 15px;
+
+    .services-cta-banner,
     .results-banner {
       flex-direction: column;
       align-items: flex-start;
-      gap: 18px;
+      gap: 16px;
 
       &__title {
-        font-size: 1.65rem;
+        font-size: 1.6rem;
       }
+
+      &__text {
+        font-size: 0.9rem;
+      }
+
+      &__action {
+        width: 100%;
+      }
+    }
+
+    .btn-all-services {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      padding: 13px 24px;
+      font-size: 0.95rem;
     }
   }
 
@@ -633,29 +665,34 @@
       width: 100%;
     }
 
-    .results-title {
-      font-size: 1.6rem;
-    }
-
-    .results-cards {
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-
     .results-stats {
       grid-template-columns: 1fr;
       gap: 14px;
-      margin-bottom: 32px;
+      margin-bottom: 0;
     }
+  }
 
+  .services-cta-section {
+    padding: 28px 0 15px;
+
+    .services-cta-banner,
     .results-banner {
       flex-direction: column;
       align-items: flex-start;
-      gap: 16px;
+      gap: 14px;
 
       &__title {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
+
+      &__text {
+        font-size: 0.875rem;
+      }
+    }
+
+    .btn-all-services {
+      width: 100%;
+      text-align: center;
     }
   }
 }
@@ -726,7 +763,7 @@
     .results-stats {
       grid-template-columns: 1fr;
       gap: 12px;
-      margin-bottom: 28px;
+      margin-bottom: 0;
     }
 
     .stat-card {
@@ -736,20 +773,35 @@
         font-size: 2rem;
       }
     }
+  }
 
+  .services-cta-section {
+    padding: 24px 0 15px;
+
+    .services-cta-banner,
     .results-banner {
       flex-direction: column;
       align-items: flex-start;
-      gap: 14px;
+      gap: 12px;
 
       &__title {
-        font-size: 1.35rem;
+        font-size: 1.3rem;
+      }
+
+      &__text {
+        font-size: 0.825rem;
+      }
+
+      &__action {
+        width: 100%;
       }
     }
 
     .btn-all-services {
       width: 100%;
       text-align: center;
+      padding: 12px 20px;
+      font-size: 0.9rem;
     }
   }
 
@@ -977,6 +1029,3 @@
     }
   }
 }
-
-
-

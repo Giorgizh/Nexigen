@@ -1,0 +1,33 @@
+@import "../variables";
+
+.services-intro-header {
+  margin-bottom: 40px;
+  max-width: 860px;
+
+  .services-intro-title {
+    font-family: $font-headings;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3b2d75;
+    margin-bottom: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+  }
+
+  .services-intro-text {
+    font-family: $font-body;
+    font-size: 0.98rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.service-cards-section {
+  padding: 85px 0 75px;
+  background-color: #f7f9fc;
+}
+
+.why-choose-section {
+  padding: 85px 0 95px;
+}
